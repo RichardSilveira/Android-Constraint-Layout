@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             pendingOperation = savedInstanceState.getString(PENDING_OPERATION, "=");
             displayOperation.setText(pendingOperation);
 
-            operand = savedInstanceState.getDouble(CURRENT_OPERAND, 0.0);
+            operand = savedInstanceState.getDouble(CURRENT_OPERAND);
 
             super.onRestoreInstanceState(savedInstanceState);
         } catch (Exception e) {
